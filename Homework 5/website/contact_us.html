@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title><strong>Contact Us</strong></title>
+
+</head>
+
+
+<body>
+
+	<header>
+		<p>Contact Us</p>
+	</header>
+	
+	<form action="/submit" method="post">
+
+		<p><br>Name:</p>
+		<input type="text" name="name_input" placeholder="John Smith" required>
+		
+		<p><br>Email Address:</p>
+		<input type="text" name="email_input" placeholder="johnsmith123@mail.com" required>
+
+		<p><label class="separator">Do you accept the terms of agreement?</label>
+
+		<div>
+			<div>
+				<input type="radio" id="terms_yes" name="terms" value="Yes">
+				<label for="terms_yes">Yes</label>
+			</div>
+			<div class="checkbox_item">
+				<input type="radio" id="terms_no" name="terms" value="No">
+				<label for="terms_no">No</label>
+			</div>
+		</div>
+		</p>
+		
+		<br>
+		<input type="submit" class="submit" value="Submit">
+	</form>
+	
+	
+	<p> Other Pages: 
+	<ul>
+		<li> <a href="index.html">Home Page</a> </li>
+		<li> <a href="story_page.html">Story Page</a> </li>
+	</ul>
+	</p>
+
+</body>
+
+
+</html>
