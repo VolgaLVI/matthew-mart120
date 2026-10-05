@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title><strong>Contact Us</strong></title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/default.css" rel="stylesheet"> </head>
+
+<body>
+	<header>
+		<p style="color: #1a1a1f; font-size: 50px; font-weight: bold;">Contact Us</p>
+	</header>
+	<form action="/submit" method="post">
+		<p class="form_title">Name:</p>
+		<input type="text" name="name_input" placeholder="John Smith" required class="padded_input">
+		<p class="form_title">Email Address:</p>
+		<input type="text" name="email_input" placeholder="johnsmith123@mail.com" required class="padded_input">
+		<p class="form_title_long">
+			<label class="separator">Do you accept the terms of agreement?</label>
+		</p>
+		<div>
+			<div class="form_list_text">
+				<input type="radio" id="terms_yes" name="terms" value="Yes">
+				<label for="terms_yes">Yes</label>
+			</div>
+			<div class="form_list_text">
+				<input type="radio" id="terms_no" name="terms" value="No">
+				<label for="terms_no">No</label>
+			</div>
+		</div>
+		<br>
+		<input type="submit" class="submit" value="Submit"> </form>
+	<p id="other_pages_title"> Other Pages: </p>
+	<ul id="other_pages_list">
+		<li> <a href="index.html">Home Page</a> </li>
+		<li> <a href="story_page.html">Story Page</a> </li>
+	</ul>
+</body>
+
+</html>

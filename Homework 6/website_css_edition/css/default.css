@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	General
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Background color */
+html {
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(201, 201, 201));
+	background-attachment: fixed;
+}
+
+/* Purple external links */
+a.external {
+	color: rgb(153, 125, 255);
+}
+
+/* Link decor */
+a {
+    text-decoration: underline;
+    color: rgb(26, 38, 153);
+}
+
+/* Header */
+header {
+	text-align: center;
+}
+
+p.list-title {
+	font-size: 28px;
+}
+
+div.list {
+	text-align: center;
+	padding-bottom: 75px;
+}
+
+.padded_input {
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+	
+
+.story_title {
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.story_body {
+	text-align: center;
+}
+
+.background_needed {
+	background-color: #c3c8f7;
+}
+
+.submit {
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+.gator_image {
+	max-width: 50%;
+	max-height: 50%;
+}
+
+#other_pages_title {
+	text-align: center;
+	font-size: 25px;
+}
+
+#other_pages_list {
+	text-align: center;
+	font-size: 14px;
+}
+	
+.form_title {
+	text-align: center;
+	font-size: 25px;
+}
+	
+.form_title_long {
+	text-align: center;
+	font-size: 18px;
+}
+
+.form_list {
+	text-align: center;
+	font-size: 14px;
+}
+
+.form_list_text {
+	text-align: center;
+	font-size: 16px;
+}
+
+/* This is bad practice btw*/
+#list_comment_one {
+	font-size: 11px;
+}
+
+#list_comment_two {
+	font-size: 11px;
+}
