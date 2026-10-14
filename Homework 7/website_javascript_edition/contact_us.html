@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title><strong>Contact Us</strong></title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/default.css" rel="stylesheet"> 
+	<script>
+	
+		function validateForm() {
+			var name = document.getElementById("name_input").value;
+			if (name == "") {
+				document.getElementById("name_input").style.backgroundColor = "red"
+				document.getElementById("required_name").innerHTML = "(Required)"
+				
+				alert("You must enter a name");
+				return false;
+			}
+			document.getElementById("name_input").style.backgroundColor = "white"
+			
+			var email = document.getElementById("email_input").value;
+			if (email == "") {
+				document.getElementById("email_input").style.backgroundColor = "red"
+				document.getElementById("required_email").innerHTML = "(Required)"
+				
+				alert("You must enter an email");
+				return false;
+			}
+			document.getElementById("email_input").style.backgroundColor = "white"
+			
+			var radioAgree = document.getElementById("terms_yes");
+			if (!radioAgree.checked) {
+				document.getElementById("required_terms").innerHTML = "(Required)"
+				alert("You must agree to the terms and conditions");
+				return false;
+			}
+			
+			
+			
+			return true;
+		} 
+		
+	
+	</script>
+	
+</head>
+
+<body>
+	<header>
+		<p style="color: #1a1a1f; font-size: 50px; font-weight: bold;">Contact Us</p>
+	</header>
+	<form name="contactForm" action="/submit" method="post">
+		<p class="form_title">Name: <span id="required_name"> </span> </p>
+		<input type="text" name="name_input" id="name_input" placeholder="John Smith" class="padded_input" required>
+		<p class="form_title">Email Address: <span id="required_email"> </span> </p>
+		<input type="text" name="email_input" id="email_input" placeholder="johnsmith123@mail.com" class="padded_input" required>
+		<p class="form_title_long">
+			<label class="separator">Do you accept the terms of agreement?</label>
+		</p>
+		<div>
+			<div class="form_list_text">
+				<input type="radio" id="terms_yes" name="terms" value="Yes">
+				<label for="terms_yes">Yes</label> <span id="required_terms"> </span>
+			</div>
+			<div class="form_list_text">
+				<input type="radio" id="terms_no" name="terms" value="No">
+				<label for="terms_no">No</label>
+			</div>
+		</div>
+		<br>
+		<input type="button" class="submit" value="Submit" onclick="return validateForm()"> </form>
+	<p id="other_pages_title"> Other Pages: </p>
+	<ul id="other_pages_list">
+		<li> <a href="index.html">Home Page</a> </li>
+		<li> <a href="story_page.html">Story Page</a> </li>
+	</ul>
+</body>
+
+</html>

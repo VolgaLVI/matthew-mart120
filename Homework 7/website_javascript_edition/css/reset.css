@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* Removes paddings and default width*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	width: 100%;
+
+}
+
+/* Default fonts */
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Line heights */
+body {
+    line-height: 1.5;
+}
+
+/* List */
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
